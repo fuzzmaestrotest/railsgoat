@@ -1,0 +1,22 @@
+rules:
+  - id: avoid_decimal_fields_for_currency_v2
+    pattern-regex: =.+DecimalField
+    paths:
+      include:
+        - "test.py"
+      exclude:
+        - "*/**"
+    message: >
+      [best-practice]. Mongo DecimalField is not allowed for representing
+      currency in models.
+
+      Please use common.fields.CurrencyField instead, more context can be found in #currency-fields-v2-migration channel.
+
+      Note for PR author: If field that you are adding is not representing currency then feel free to /ignore it, otherwise using new Currency type is mandatory.
+    languages:
+      - python
+    severity: WARNING
+    metadata:
+      category: best-practice
+      rule-origin-note: published from
+        /src/write-better-python/avoid_decimal_fields_for_currency.yaml in None
