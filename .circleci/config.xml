@@ -4,7 +4,7 @@ jobs:
     parameters: 
       default_branch:
         type: string
-        default: main
+        default: master
     environment:
       SEMGREP_REPO_URL: << pipeline.project.git_url >>
       SEMGREP_BRANCH: << pipeline.git.branch >>
