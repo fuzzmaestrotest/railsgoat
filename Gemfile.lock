@@ -343,7 +343,7 @@ GEM
     websocket-extensions (0.1.5)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.2.5)
+    zeitwerk (2.2.0)
 
 PLATFORMS
   ruby
@@ -378,6 +378,7 @@ DEPENDENCIES
   rails-perftest
   rake
   rb-fsevent
+  redcloth (= 4.0.1)
   responders
   rspec-rails (= 4.0.0.beta3)
   rubocop-github
