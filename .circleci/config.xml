@@ -24,7 +24,7 @@ jobs:
             fi
       - run:
           name: "Semgrep scan"
-          command: semgrep ci
+          command: semgrep ci         
 workflows:
   Semgrep:
     jobs:
