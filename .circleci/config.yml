@@ -1,7 +1,7 @@
 version: 2.1
 jobs:
   semgrep-scan:
-    parameters:
+    parameters: 
       default_branch:
         type: string
         default: master
