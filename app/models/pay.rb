@@ -8,6 +8,7 @@ class Pay < ApplicationRecord
   validates :bank_routing_num, presence: true
   validates :percent_of_deposit, presence: true
   validates :percent_of_depositer, presence: true
+  validates :percent_of_depositee, presence: true
 
   # callbacks
   before_save :encrypt_bank_account_num
